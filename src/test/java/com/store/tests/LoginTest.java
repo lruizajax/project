@@ -1,5 +1,7 @@
 package com.store.tests;
 
+import org.testng.Assert;
+import org.testng.SkipException;
 import org.testng.annotations.Test;
 
 import com.store.events.HomePageEvents;
@@ -27,10 +29,10 @@ public class LoginTest extends BaseTest {
 	}
 	
 	public void SingInOnStoreFail() {
-		
+		Assert.assertTrue(false);
 	}
 	
 	public void SingInOnStoreSkipped() {
-		
+		throw new SkipException("Skipping this exception");
 	}
 }

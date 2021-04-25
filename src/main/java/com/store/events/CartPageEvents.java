@@ -25,7 +25,8 @@ public class CartPageEvents {
 		
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,1000)");
-		element.getWebElement(driver, "XPATH", CartPageElements.items_1).click();
+        Thread.sleep(1000);
+        element.getWebElement(driver, "XPATH", CartPageElements.items_1).click();
 		Thread.sleep(1000);
 		element.getWebElement(driver, "XPATH", CartPageElements.item_1_color).click();
 		element.getWebElement(driver, "XPATH", CartPageElements.item_1_size).click();
