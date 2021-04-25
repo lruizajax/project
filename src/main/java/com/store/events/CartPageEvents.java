@@ -31,6 +31,7 @@ public class CartPageEvents {
 		element.getWebElement(driver, "XPATH", CartPageElements.item_1_color).click();
 		element.getWebElement(driver, "XPATH", CartPageElements.item_1_size).click();
 		element.getWebElement(driver, "ID", CartPageElements.item_1_qty).sendKeys("2");
+		Thread.sleep(1000);
 		element.getWebElement(driver, "XPATH", CartPageElements.addtoCart).click();
 		Thread.sleep(1000);
 		element.getWebElement(driver, "XPATH", CartPageElements.toCheckout).click();
