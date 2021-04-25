@@ -21,4 +21,16 @@ public class LoginTest extends BaseTest {
 		loginPageEvents.inputCredentialsAndSubmit();
 
 	}
+	
+	public void Logout() {
+		System.out.println("logout of store");
+	}
+	
+	public void SingInOnStoreFail() {
+		
+	}
+	
+	public void SingInOnStoreSkipped() {
+		
+	}
 }
